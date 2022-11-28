@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        div#area{
+            font:normal 20pt Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            color: white;
+            width:200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"  vai dentro < aqui >    --> 
+    <div id="area">interaja....</div>
+
+    <script>
+
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar()
+        {
+            //tudo que tiver aqui dentro so vai ser chamado quando o evento ocorrer
+
+            a.style.background = ('green')
+            a.innerText = ('clicou')
+        }
+
+        function entrar(){
+            a.style.background = ('yellow')
+            a.innerText = ('entrou')
+            a.style.color = ('black')
+        }
+
+        function sair(){
+            a.style.background = ('red')
+            a.innerText = ('saiu')
+        }
+    </script>
+</body>
+</html>
