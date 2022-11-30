@@ -7,6 +7,29 @@
     <title>estrangeiros</title>
 </head>
 <body>
-    
+    <p>qual seu pais ? 
+        <input type="text" name="pais" id="pais"> 
+        <input type="button" value="confirmar" onclick="paises()">
+    </p>
+
+    <div id="resposta">
+
+    </div>
+    <script>
+        function paises(){
+        var p = window.document.querySelector('input#pais')
+        var r = window.document.querySelector('div#resposta')
+
+         if( p == 'brasil'){
+                 r.innerHTML = ('vc é brasileiro')
+             }else{
+            r.innerHTML = ('vc é estrangeiro')
+        }
+
+        }
+
+
+
+    </script>
 </body>
 </html>
