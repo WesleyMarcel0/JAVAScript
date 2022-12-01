@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>qual seu pais ? 
-        <input type="text" name="pais" id="pais"> 
+        <input type="text" name="pais" id="pais1"> 
         <input type="button" value="confirmar" onclick="paises()">
     </p>
 
@@ -17,13 +17,14 @@
     </div>
     <script>
         function paises(){
-        var p = window.document.querySelector('input#pais')
+        var p = window.document.querySelector('input#pais1')
         var r = window.document.querySelector('div#resposta')
+        var iden = String(pais1.value)
 
-         if( p == 'brasil'){
-                 r.innerHTML = ('vc é brasileiro')
+         if( iden == 'brasil'){
+                 r.innerHTML = ('<p>vc é brasileiro</p>')
              }else{
-            r.innerHTML = ('vc é estrangeiro')
+            r.innerHTML = ('<p>vc é estrangeiro </p>')
         }
 
         }
