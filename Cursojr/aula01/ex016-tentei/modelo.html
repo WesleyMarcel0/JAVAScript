@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Verificaor de idade</title>
+    <title>Super contador</title>
 </head>
 <body>
     <header>
@@ -13,20 +13,14 @@
     </header>
 
     <section>
-        <div>
-            <p>Inicio:
-                <input type="number" name="" id="">
-            </p>
+        <div id="dados">
+            <p>Inicio:<input type="number" name="iniciop" id="txti"></p>
 
-            <p>Fim:
-                <input type="number" name="" id="">
-            </p>
+            <p>Fim:<input type="number" name="fimp" id="txtf"></p>
 
-            <p>passo:
-                <input type="number" name="" id="">
-            </p>
+            <p>passo:<input type="number" name="passop" id="txtp"></p>
 
-            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            <p><input type="button" value="Iniciar" onclick="contar()"></p>
         </div>
         <div id="res">
             Preparando a contagem...
