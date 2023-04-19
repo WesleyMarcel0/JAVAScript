@@ -6,3 +6,4 @@ function fatorial(n){
         return n = fatorial(n-1) //a propria funcção chamando seu numero
     }
 }
+console.log(fatorial(5))
