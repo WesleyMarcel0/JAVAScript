@@ -1,5 +1,5 @@
 var num = [5, 8, 2, 9, 3]
-num[6] = 8 // cria na casa 6 e coloca o valor nela
+num[6] = 8 // cria a casa 6 e coloca o valor nela
 num.push(7) // cria a proxima casa  e coloca o 7 nele
 num.length //conta quantas casas tem o arrey
 num.sort() //coloca em ordem crescente
